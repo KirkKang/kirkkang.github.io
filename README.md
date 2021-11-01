@@ -1,1 +1,0 @@
-# kirkkang.github.io
