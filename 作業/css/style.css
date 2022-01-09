@@ -1,0 +1,76 @@
+:root{
+    background-color: orange;
+}
+
+#header{
+    height: 75px;
+    background-color: red;
+    position:relative;
+}
+
+#footer{
+    clear:both;
+    height: 50px;
+    background-color: yellow;
+}
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none; 
+}
+.menu {
+font-size: 30px;
+padding-left: 40px;
+}
+.menu > li { /*子選擇器，只有第一層*/
+float: left;
+}
+.menu li {
+position: relative;
+padding: 0px;
+border: black 1px dashed;
+min-width: 120px;
+}
+.menu ul {
+position: absolute;
+z-index: 10;
+top: 100%;
+display:none; /*預設ul不顯示*/
+}
+
+.menu a {
+display: block;
+padding: 10px;
+text-decoration: none;
+background-image: url(img/btn1.png);
+background-size: cover;
+color: black;
+}
+.menu a:hover {
+background-size: cover;
+color: white;
+}
+.menu li:hover > ul {
+display: block; /*移動到li，li下一層的ul才顯示*/
+}
+h1 {
+    color: white; font-weight: bold; font-size: 36px;
+    text-align: center; background-color: lightgreen;
+  }
+  .co > p {
+    border: 1px solid black;
+ }
+ 
+ .img1{
+     border-radius:8px;
+     width:350px;
+     height:300px;
+     padding-left: 100px;
+     
+ }
+ #fixed{
+    position: fixed;
+    bottom:0;
+    left:90%;
+    background-color: white;
+}
